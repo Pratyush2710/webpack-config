@@ -3,5 +3,11 @@ const eleven = {
   b: 3,
   c: 4,
 };
+const twelve = {
+  ...eleven,
+  d: 5,
+  a: 10,
+};
 
 console.log(eleven);
+console.log(twelve);
