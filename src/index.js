@@ -1,3 +1,4 @@
+import "./styles/index.css";
 const eleven = {
   a: 2,
   b: 3,
