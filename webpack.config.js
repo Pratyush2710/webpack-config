@@ -1,16 +1,18 @@
 const MiniExtractCssPlugin = require("mini-css-extract-plugin");
 let mode = "development";
-
+let target = "web";
 if (process.env.NODE_ENV === "production") {
   mode = "production";
+  target = "browserslist";
 }
 
 module.exports = {
   mode: mode,
+  target: target,
   module: {
     rules: [
       {
-        test: /\.s?css$/i,
+        test: /\.(s[ac]|c)ss$/i,
         use: [
           MiniExtractCssPlugin.loader,
           "css-loader",
