@@ -1,14 +1,4 @@
-import "./styles/index.scss";
-const eleven = {
-  a: 2,
-  b: 3,
-  c: 4,
-};
-const twelve = {
-  ...eleven,
-  d: 5,
-  a: 10,
-};
+import { render } from "react-dom";
+import App from "./components/app";
 
-console.log(eleven);
-console.log(twelve);
+render(<App />, document.getElementById("root"));
