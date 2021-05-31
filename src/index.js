@@ -1,4 +1,4 @@
-import "./styles/index.css";
+import "./styles/index.scss";
 const eleven = {
   a: 2,
   b: 3,
